@@ -22,7 +22,8 @@ urlToplay: any;
     
   }
   myCurrentUrl(url:any){
-    this.urlToplay = this.sanitizer.bypassSecurityTrustResourceUrl(url); 
+    this.urlToplay = this.sanitizer.bypassSecurityTrustResourceUrl(url);
+    console.log(url) ;
    }
    carouselOptions = {
     items: 4, dots: false, nav: true,loop: true, margin:15,
@@ -32,7 +33,7 @@ urlToplay: any;
         items: 1,
         nav: true
       },
-      400: {
+      480: {
         items: 2,
         nav: true
       },
@@ -43,7 +44,7 @@ urlToplay: any;
       992: {
         items: 4,
         nav: true,
-        loop: false
+        loop: true
       }
     }
   }

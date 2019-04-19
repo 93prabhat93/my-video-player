@@ -9,17 +9,28 @@ body{
 .owl-carousel .owl-item{
     cursor: pointer;
 }
+.owl-theme.owl-carousel{
+    width: 80%;
+    margin: 0 auto;
+    z-index: 100;
+}
+.owl-carousel .owl-stage-outer{
+   width: 101%;
+}
 .owl-nav{
     position: absolute;
     top: calc(50% - 50px);
     width: 100%;
+    z-index: 0;
 }
 .owl-prev{
-    float: left;
+    position: absolute;
+    left: -30px;
     background: #4c4747 !important;
 }
 .owl-next{
-    float: right;
+    position: absolute;
+    right: -30px;
     background: #4c4747 !important;
 }
 .owl-prev span,.owl-next span{

@@ -7,10 +7,10 @@
     [items]="videos"
       [carouselClasses]="['owl-theme', 'row', 'sliding']">
     <div class="item" *ngFor="let video of videos;let i = index">
-      <a class="single-videos" (click)="myCurrentUrl(video.trailer)">
+      <div class="single-videos" (click)="myCurrentUrl(video.trailer)">
         <img class="thumbnail" src="{{ video.poster }}">
         <p class="video-title">{{ video.name | uppercase }}</p>
         
-    </a>
+      </div>
     </div>
    </owl-carousel>

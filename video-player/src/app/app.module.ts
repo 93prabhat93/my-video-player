@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA }      from '@angular/core';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';  // replaces previous Http service
-import { FormsModule } from '@angular/forms';
 import { ApiRequestService } from './api-request.service';   // our custom service, see below
 
 import { RequestInterceptor } from './request.interceptor';
