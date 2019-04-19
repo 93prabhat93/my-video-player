@@ -22,9 +22,31 @@ urlToplay: any;
     
   }
   myCurrentUrl(url:any){
-    alert(url)
     this.urlToplay = this.sanitizer.bypassSecurityTrustResourceUrl(url); 
    }
+   carouselOptions = {
+    items: 4, dots: false, nav: true,loop: true, margin:15,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+        nav: true
+      },
+      400: {
+        items: 2,
+        nav: true
+      },
+      600: {
+        items: 3,
+        nav: true
+      },
+      992: {
+        items: 4,
+        nav: true,
+        loop: false
+      }
+    }
+  }
   getVideos() {
     this.apiRequestService.getVideosFromServer().subscribe(
        data => { 

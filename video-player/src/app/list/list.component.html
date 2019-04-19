@@ -2,14 +2,14 @@
 <app-player [currentUrl]="urlToplay"></app-player>
 
 <owl-carousel
-     [options]="{items: 4, dots: false, nav: true,loop: true, margin:10 }"
+     [options]="carouselOptions"
     
     [items]="videos"
       [carouselClasses]="['owl-theme', 'row', 'sliding']">
     <div class="item" *ngFor="let video of videos;let i = index">
       <a class="single-videos" (click)="myCurrentUrl(video.trailer)">
         <img class="thumbnail" src="{{ video.poster }}">
-        <p>{{ video.name }}</p>
+        <p class="video-title">{{ video.name | uppercase }}</p>
         
     </a>
     </div>

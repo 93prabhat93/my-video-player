@@ -1,4 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    background: #000000;
+}
 .owl-carousel .owl-item img{
     height: 250px !important;
+    border: 2px solid #cdd646;
+}
+.owl-carousel .owl-item{
+    cursor: pointer;
+}
+.owl-nav{
+    position: absolute;
+    top: calc(50% - 50px);
+    width: 100%;
+}
+.owl-prev{
+    float: left;
+    background: #4c4747 !important;
+}
+.owl-next{
+    float: right;
+    background: #4c4747 !important;
+}
+.owl-prev span,.owl-next span{
+    color: #ffffff;
+    font-size: 50px;
+}
+
+@media(max-width:480px){
+    .owl-carousel .owl-item img{
+    margin: 0 auto;
+    width: 90% !important;
+    }
 }
