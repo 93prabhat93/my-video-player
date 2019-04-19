@@ -1,0 +1,8 @@
+.player-box{
+    width: 50%;
+    margin:0 auto;
+}
+.player-box iframe{
+    width: 100%;
+    height: 400px;
+}
