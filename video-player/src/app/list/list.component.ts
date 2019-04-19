@@ -26,7 +26,7 @@ urlToplay: any;
     console.log(url) ;
    }
    carouselOptions = {
-    items: 4, dots: false, nav: true,loop: true, margin:15,
+    items: 4, dots: false, nav: true,loop: false, margin:15,
     responsiveClass: true,
     responsive: {
       0: {
@@ -44,7 +44,7 @@ urlToplay: any;
       992: {
         items: 4,
         nav: true,
-        loop: true
+        loop: false
       }
     }
   }
@@ -54,10 +54,8 @@ urlToplay: any;
          this.videos = data; 
         console.log(this.videos);
        },
-       err => {
+       error => {
          alert('Error!'); 
-         
-         // We can redirect it to error page.
        },
    );
 }

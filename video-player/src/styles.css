@@ -30,7 +30,7 @@ body{
 }
 .owl-next{
     position: absolute;
-    right: -30px;
+    right: -35px;
     background: #4c4747 !important;
 }
 .owl-prev span,.owl-next span{
